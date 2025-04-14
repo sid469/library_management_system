@@ -73,44 +73,72 @@ Library Constraints:
 
 # Input Format
 The commands for each entity and operation will have a similar pattern like:
+
               Entity/operation
           Details of the entity/operation
+          
 Book
+
 A new book will be added by the “Book” word followed by the details. There can be three scenarios for books as described below.
+
                   Book
     Case 1 format: Title Author ISBN CopiesAvailable TotalCopies
     Case 2 format: None
     Case 3 format: ExistingBook OldIsbn NewIsbn
+    
  
 Increasing the count of a book
+
 The count of an existing book will be updated by the “UpdateCopiesCount” word followed by the details. The format will be as follows:
+
              UpdateCopiesCount
              Isbn NewCount  
+             
 Member
+
 A new member will be added by the “Member” word followed by the details. There can be two scenarios for members as described below.
+
               Member
         Case 1 format: MemberId Name BorrowLimit
         Case 2 format: NoBorrowLimit MemberId Name
+        
 Borrow Operation
+
 Borrow book operation will be given by the “Borrow” word followed by the details. The format is as follows:
+
               Borrow
            MemberId isbn
+           
 Return Operation 
+
 Return book operation will be given by the “Return” word followed by the details. The format is as follows:
+
               Return
            MemberId isbn
+           
 Print book details 
+
 The details of the book to be printed is as follows:
+
             PrintBook
                isbn
+               
 Print member details
+
 The details of the member to be printed is as follows:
+
            PrintMember
             memberId
+            
 Print library details 
+
 The details of the library to be printed is as follows:
+
           PrintLibrary
+          
 End of input
+
 The input will end with the “Done” keyword.
-Done
+
+              Done
 
